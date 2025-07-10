@@ -1,0 +1,119 @@
+/* Dark metallic background with subtle texture */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+  background-image: 
+    repeating-radial-gradient(circle at center, 
+      #222 0, #222 1px, #111 2px, #111 4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+.app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Glass card with subtle metallic gradient and neon glow */
+.glass-card {
+  background: linear-gradient(145deg, #22272e, #1b1f23);
+  border: 1px solid #3d8af7;
+  box-shadow:
+    0 0 10px #3d8af7aa,
+    inset 0 0 20px #3d8af7aa,
+    0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  color: #c0d8ff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  box-shadow:
+    0 0 20px #4aa8ffcc,
+    inset 0 0 25px #4aa8ffcc,
+    0 12px 48px rgba(0, 0, 0, 0.7);
+}
+
+/* Header */
+.glass-card h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  text-align: center;
+  color: #a0c9ff;
+  text-shadow: 0 0 8px #3d8af7;
+}
+
+/* Description */
+.glass-card p {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  opacity: 0.8;
+  color: #9bbaff;
+  text-shadow: 0 0 4px #2e6ede66;
+}
+
+/* Textarea with subtle glow */
+.glass-card textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #3d8af7;
+  background: #121621;
+  color: #d0e4ff;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  min-height: 150px;
+  box-shadow: 0 0 8px #3d8af7aa;
+  transition: box-shadow 0.3s ease;
+}
+
+.glass-card textarea:focus {
+  box-shadow: 0 0 12px #5ca0ffcc;
+  border-color: #5ca0ff;
+}
+
+/* Button with neon glow */
+.glass-card button {
+  align-self: center;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  background-color: #2a54f5;
+  color: #e6f0ff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow:
+    0 0 12px #2a54f5aa,
+    0 0 20px #2a54f5cc;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  text-shadow: 0 0 6px #c6d9ff;
+}
+
+.glass-card button:hover {
+  background-color: #3d72ff;
+  box-shadow:
+    0 0 18px #3d72ffcc,
+    0 0 28px #3d72ffdd;
+  transform: scale(1.05);
+}
